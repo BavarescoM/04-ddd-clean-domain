@@ -1,0 +1,23 @@
+value objects
+
+new Question({
+  slug: Slug.createFromText("A minha d")
+})
+new Slug("an example")
+configurar ts config paths
+
+eslint
+npm i eslint @rocketseat/eslint-config -D
+
+
+// override fazeer propriedades opcionais e sobrescrever caso forem passadas
+export function MakeQuestion(override: Partial<QuestionProps> = {}) {
+  const question = Question.create({
+    title: 'Example question',
+    slug: Slug.create('exemple-question'),
+    authorId: new UniqueEntityId(),
+    content: 'Example content',
+    ...override,
+  })
+  return question
+}
