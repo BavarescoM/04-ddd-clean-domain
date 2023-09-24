@@ -23,3 +23,9 @@ export function MakeQuestion(override: Partial<QuestionProps> = {}) {
 }
 
 npx tsc --noEmit
+
+repositorio -> contrato
+inmemory banco implementa o methodo
+usecase
+  regra de negocio
+  test
