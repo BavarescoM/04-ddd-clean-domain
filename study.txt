@@ -21,3 +21,5 @@ export function MakeQuestion(override: Partial<QuestionProps> = {}) {
   })
   return question
 }
+
+npx tsc --noEmit
